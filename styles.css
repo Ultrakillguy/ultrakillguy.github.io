@@ -1,0 +1,93 @@
+@keyframes openAnimation{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@keyframes hoverAnimation{
+  0%{background-color: red;}
+  10%{background-color: orange;}
+  20%{background-color: yellow;}
+  30%{background-color: yellowgreen;}
+  40%{background-color: green;}
+  60%{background-color: blue;}
+  70%{background-color: purple;}
+  100%{background-color: red;}
+}
+
+html {
+  background-image: url("background.gif");
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  gap: 50px;
+  background-color: transparent;
+  border-radius: 10px;
+  font-family: helvetica;
+  text-align: center;
+  margin: 0px;
+  animation-name: openAnimation;
+  animation-duration: 2s;
+}
+
+div{
+  color: white;
+}
+
+a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border: 2px solid white;
+  background-color: transparent;
+  gap: 100px;
+  color: white;
+  padding: 4px;
+  font-size: 1.5em;
+}
+
+a:hover{
+  animation-name: hoverAnimation;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+input{
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+  padding: 3px;
+  width: 97%;
+}
+
+input:hover{
+  background-color: white;
+  color: black;
+}
+
+input:focus{
+  background-color: white;
+  color: transparent;
+}
+
+button{
+  color: white;
+  font-size: 1.5em;
+}
+
+iframe{
+  width: 97%;
+  height: 95vh;
+  border: none;
+}
+
+#aboutBlankButton {
+ position: fixed;
+ bottom: 0px;
+}
+

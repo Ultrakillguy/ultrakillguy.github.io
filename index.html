@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lightspeed Library: Web Edition</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="welcomeText">
+       <h1>Welcome to the Lightspeed Library Web Edition!</h1> 
+    </div>
+    <div id="description">
+       <h2>This website is for the people who don't have accsess to my district wide Google Site. The Lightspeed Library is for a way to acsess ublocked games that arent blocked by the Lightspeed Filter Agent. Feel free to game here as long as you like :)</h2>
+       <h2>Tip: Open this tab in a about:blank</h2>
+    </div>
+    <br>
+    <div id="buttons">
+      <a id="gamesButton" href="./games.html">Games</a>
+      <br>
+      <a id="proxyButton" href="./proxies.html">Proxies</a>
+      <br>
+      <a id="websitesButton" href="./sites.html">Other Websites</a>
+    </div>
+    <div id="aboutBlankButton">
+      <h3>Click here to open in about:blank (Reccomended)</h3>
+      <a href="#" onclick="openAboutBlank()">about:blank</a>
+    </div>
+     <script>
+       
+
+        function openAboutBlank() {
+            var win = window.open("about:blank","_blank")
+            if (win){
+            var url = "index.html"
+            var iframe = win.document.createElement('iframe')
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.style.border = "none";
+            iframe.src = url;
+            win.document.body.appendChild(iframe)
+            window.location.href = "https://classroom.google.com";
+            } else {
+              alert("Popups are required to perform this action.")
+            }
+
+            
+        }
+     </script>
+  </body>
+</html>
